@@ -1,5 +1,9 @@
 steps:
 
-- id: "Rodando docker-compose"
+- id: "RUN docker-compose"
   name: 'gcr.io/$PROJECT_ID/docker-compose:1.25.5'
   args: ['-f', 'docker-compose.cloudbuild.yaml', 'up', '-d']
+
+- id: "RUN docker ps"
+  name: 'gcr.io/cloud-builders/docker'
+  args: ['ps']
