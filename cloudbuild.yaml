@@ -4,6 +4,7 @@ steps:
   name: 'gcr.io/$PROJECT_ID/docker-compose:1.25.5'
   args: ['-f', 'docker-compose.cloudbuild.yaml', 'up', '-d']
 
-- id: "RUN docker ps"
+- id: "RUN golang application test"
   name: 'gcr.io/cloud-builders/docker'
-  args: ['ps']
+  args: ['go', 'test']
+
