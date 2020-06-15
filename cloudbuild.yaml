@@ -7,4 +7,9 @@ steps:
 - id: "RUN golang application test"
   name: 'gcr.io/cloud-builders/go'
   env: ['PROJECT_ROOT=/go/bin/main']
+  args: ['test']
+
+- id: "RUN golang application"
+  name: 'gcr.io/cloud-builders/go'
+  env: ['PROJECT_ROOT=/go/bin/main']
   args: ['run', 'main.go']
