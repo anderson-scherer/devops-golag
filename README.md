@@ -5,12 +5,11 @@
 
 ## Result expec in Google Cloud Build
 
-Steps
+**Steps**
 - Build Sumary
 - 0: RUN docker-compose
 - 1: RUN golang application test
 - 2: RUN golang application main.go
-
 
 ## Version latest
 
