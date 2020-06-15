@@ -4,7 +4,7 @@ FROM golang:alpine AS builder
 WORKDIR $GOPATH/src/golang/main/
 
 # Copiando executável
-COPY main.go .
+COPY . .
 
 # Defiições de Packege Get
 RUN go get -d -v
