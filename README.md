@@ -3,7 +3,7 @@
 - [GoLang](https://hub.docker.com/repository/docker/andersonscherer/golang)
 - [Image docker-compose](https://github.com/anderson-scherer/docker-compose)
 
-## Result expec in Google Cloud Build
+## Result expect in Google Cloud Build
 
 **Steps**
 - Build Sumary
